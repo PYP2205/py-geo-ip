@@ -12,16 +12,21 @@ ex.
 2.17.12.1 an IPv4 address range reserved for Russian Federation.
 2001:FE80:CAFE::1 is an IPv6 address range reserved for Switzerland.
 """
-import lookup
 
+import lookup
+# Function used for looking up IP addresses
 def LookingUpIP(bol):
 
-    looking_upIP = bol
-    while looking_upIP:
+    looking_up_IP = bol
+    while looking_up_IP:
         
-        if bol:
+        # If looking_up_IP is true, then it will call the function below.
+        if looking_up_IP:
+            
+            # Calls function to look up an IPv4 or IPv6 provided by the user.
             lookup.ip_info()
-
+        
+        # If bol is false then the while-loop is broken.
         elif not bol:
             break
 try:
@@ -46,5 +51,8 @@ except KeyError:
     print("Invalid IP Address\n")
     LookingUpIP(True)
 
+    # If any other exception occurs,
+    # then this will prevent an unhandled exception
+    # from ending the program.
 except:
     LookingUpIP(True)
