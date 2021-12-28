@@ -1,2 +1,2 @@
 # py-geo-ip
-This is a Python Program that can be used for finding the geographic location of an IPv4 and IPv6 address.
+This is a Python Program that can be used for finding the geographic location of an IPv4 and IPv6 address. When prompted for an IPv4 or IPv6 address, you will provide an IPv4 or IPv6 address without a subnet prefix. Then it will look up the IP address, show you what kind of IP address you provided, and write the information into a .txt file. It will endlessly prompt you for an IP address untill you press CTRL + C or CTRL + V.
